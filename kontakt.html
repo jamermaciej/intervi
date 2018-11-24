@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Intervi</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+  <body>
+    <header class="header">
+      <h1><a href="/"><img src="images/logo_header.png" alt="Intervi"></a></h1>
+      <button class="menu-toggle"><span></span></button>
+      <nav class="menu">
+        <ul class="menu__items">
+          <li class="menu__item"><a class="menu__link" href="przepisy.html">Przepisy</a></li>
+          <li class="menu__item"><a class="menu__link active" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="grid-container contact">
+        <h2>Kontakt</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <input type="text" name="firstName" id="firstName" placeholder="Imię *" required>
+            <label for="firstName">Imię *</label>
+          </div>
+          <div class="form-row">
+            <input type="text" name="surname" id="surname" placeholder="Nazwisko">
+            <label for="surname">Nazwisko</label>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" id="email" placeholder="Email *" required>
+            <label for="email">Email *</label>
+          </div>
+          <button type="submit">Wyślij</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="/"><img src="images/logo_footer.png" alt="Intervi"></a>
+    </footer>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
